@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Saffron Table</title>
+  <meta name="description" content="Browse the Saffron Table gallery — our food, our space, our atmosphere. A visual taste of what awaits you." />
+  <meta property="og:title" content="Gallery — Saffron Table" />
+  <meta property="og:description" content="A visual journey through our dishes, our space, and our Mediterranean-inspired atmosphere." />
+  <link rel="canonical" href="https://saffrontable.com/gallery.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav id="navbar" class="navbar nav-solid" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Saffron Table — Home">
+        <span class="nav-logo-name">Saffron Table</span>
+        <span class="nav-logo-sub">Mediterranean &amp; Fusion</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="reservations.html" class="btn btn--primary nav-cta">Reserve Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="reservations.html" class="mobile-cta btn btn--primary">Reserve Table</a>
+    <div class="mobile-contact-info"><p>+1 (555) 019-2000 &nbsp;·&nbsp; hello@saffrontable.com</p></div>
+  </div>
+
+  <main id="main">
+
+    <header class="page-hero">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+      <div class="container page-hero-content">
+        <span class="section-label">Visual Journey</span>
+        <h1>A Feast for <em>The Eyes</em></h1>
+        <p class="lead">Food, ambiance, and the moments that make Saffron Table memorable.</p>
+      </div>
+    </header>
+
+    <section class="section gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+
+        <h2 id="gallery-heading" class="sr-only">Photo Gallery</h2>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters reveal" role="group" aria-label="Filter gallery by category">
+          <button class="cat-btn active gallery-filter-btn" data-filter="all">All</button>
+          <button class="cat-btn gallery-filter-btn" data-filter="food">Food &amp; Dishes</button>
+          <button class="cat-btn gallery-filter-btn" data-filter="interior">Interior</button>
+          <button class="cat-btn gallery-filter-btn" data-filter="events">Events</button>
+          <button class="cat-btn gallery-filter-btn" data-filter="bar">Bar &amp; Drinks</button>
+        </div>
+
+        <!-- Masonry Gallery Grid -->
+        <div class="gallery-grid reveal" role="list" aria-label="Gallery images">
+
+          <!-- Each item: data-category for filtering, data-caption for lightbox, data-full for full image src -->
+          <!-- Replace img-placeholder divs with real <img> tags when photos are available -->
+
+          <div class="gallery-item" data-category="food" data-caption="Saffron-Scented Hummus" role="listitem">
+            <div class="gallery-img img-placeholder" style="--ar:1; height:260px; background:linear-gradient(135deg,#e4ddd0,#d5cec0);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Saffron-Scented Hummus</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="interior" data-caption="Main Dining Room" role="listitem">
+            <div class="gallery-img img-placeholder" style="--ar:4/3; height:340px; background:linear-gradient(135deg,#1a1a1a,#2a2a2a);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2" color="white"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span style="color:rgba(255,255,255,0.2);">Interior</span>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Main Dining Room</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="food" data-caption="Octopus à la Plancha" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:220px; background:linear-gradient(135deg,#ddd3c0,#ccc0a8);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Octopus à la Plancha</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="bar" data-caption="Saffron Spritz — Our Signature Cocktail" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:300px; background:linear-gradient(135deg,#c8a06a22,#e4ddd0);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Saffron Spritz</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="events" data-caption="Private Dining Setup" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:240px; background:linear-gradient(135deg,#242424,#161616);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2" color="white"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span style="color:rgba(255,255,255,0.2);">Events</span>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Private Dining Setup</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="food" data-caption="Baklava Sundae" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:280px; background:linear-gradient(135deg,#ede3d0,#ddd3bb);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Baklava Sundae</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="interior" data-caption="The Bar" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:320px; background:linear-gradient(135deg,#111,#222);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.15" color="white"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span style="color:rgba(255,255,255,0.15);">The Bar</span>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">The Bar</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="food" data-caption="Lamb Rack Provençal" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:250px; background:linear-gradient(135deg,#d8cfc0,#c8c0aa);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Lamb Rack Provençal</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="events" data-caption="Wedding Reception" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:200px; background:linear-gradient(135deg,#f0ece4,#e0dcd0);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Wedding Reception</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="bar" data-caption="Wine Selection" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:280px; background:linear-gradient(135deg,#1e1218,#2a1a22);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.15" color="white"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span style="color:rgba(255,255,255,0.15);">Wine</span>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Wine Selection</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="interior" data-caption="Private Dining Room" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:220px; background:linear-gradient(135deg,#181818,#282828);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.15" color="white"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span style="color:rgba(255,255,255,0.15);">Private Dining</span>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Private Dining Room</span></div>
+          </div>
+
+          <div class="gallery-item" data-category="food" data-caption="Mezze Sharing Plate" role="listitem">
+            <div class="gallery-img img-placeholder" style="height:300px; background:linear-gradient(135deg,#e8e0d0,#d8d0c0);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="gallery-overlay"><span class="gallery-caption">Mezze Sharing Plate</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Like What You <em>See?</em></h2>
+        <p>Come experience it in person — book your table today.</p>
+        <div class="btn-group">
+          <a href="reservations.html" class="btn btn--primary">Reserve a Table</a>
+          <a href="menu.html" class="btn btn--outline">View the Menu</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Lightbox ── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="lightbox-content" aria-live="polite"></div>
+      <button id="lightbox-prev" class="lightbox-prev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button id="lightbox-next" class="lightbox-next" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <p id="lightbox-caption" style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.6);font-size:0.85rem;letter-spacing:0.06em;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:90vw;"></p>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="nav-logo"><span class="nav-logo-name">Saffron Table</span><span class="nav-logo-sub">Mediterranean &amp; Fusion</span></div><p>Modern Mediterranean dining rooted in tradition, crafted for the curious palate.</p><div class="footer-social" aria-label="Social media links"><a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+        <div class="footer-col"><h4>Navigate</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul role="list"><li><a href="tel:+15550192000">+1 (555) 019-2000</a></li><li><a href="mailto:hello@saffrontable.com">hello@saffrontable.com</a></li><li><a href="#">42 Aegean Boulevard, NY 10001</a></li></ul></div>
+        <div class="footer-col"><h4>Hours</h4><div class="hours-row"><span class="day">Mon</span><span class="time">Closed</span></div><div class="hours-row"><span class="day">Tue–Thu</span><span class="time">12pm – 10pm</span></div><div class="hours-row"><span class="day">Fri–Sat</span><span class="time">12pm – 11pm</span></div><div class="hours-row"><span class="day">Sun</span><span class="time">11am – 9pm</span></div></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 Saffron Table. All rights reserved.</p><nav class="footer-legal" aria-label="Legal links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+</html>

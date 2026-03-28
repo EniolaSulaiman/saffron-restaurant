@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Saffron Table</title>
+  <meta name="description" content="Explore the Saffron Table menu — starters, mains, desserts, and drinks. Modern Mediterranean cuisine with seasonal, fresh ingredients." />
+  <meta property="og:title" content="Menu — Saffron Table" />
+  <meta property="og:description" content="Our seasonal Mediterranean menu featuring artful starters, inspired mains, and indulgent desserts." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://saffrontable.com/menu.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav id="navbar" class="navbar nav-solid" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Saffron Table — Home">
+        <span class="nav-logo-name">Saffron Table</span>
+        <span class="nav-logo-sub">Mediterranean &amp; Fusion</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="reservations.html" class="btn btn--primary nav-cta">Reserve Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="reservations.html" class="mobile-cta btn btn--primary">Reserve Table</a>
+    <div class="mobile-contact-info"><p>+1 (555) 019-2000 &nbsp;·&nbsp; hello@saffrontable.com</p></div>
+  </div>
+
+  <main id="main">
+
+    <header class="page-hero">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+      <div class="container page-hero-content">
+        <span class="section-label">Seasonal Menu</span>
+        <h1>Our <em>Culinary</em> Offerings</h1>
+        <p class="lead">Crafted with the finest seasonal ingredients, inspired by the Mediterranean coast.</p>
+      </div>
+    </header>
+
+    <section class="section menu-section" aria-labelledby="menu-main-heading">
+      <div class="container">
+
+        <!-- Dietary Key -->
+        <div class="reveal" style="margin-bottom:40px; padding:20px 24px; background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-soft); display:flex; flex-wrap:wrap; gap:20px; align-items:center;">
+          <span style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--charcoal);">Dietary Guide:</span>
+          <span class="diet-badge vegan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M8 12l3 3 5-5"/></svg>
+            Vegan
+          </span>
+          <span class="diet-badge gf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            Gluten Free
+          </span>
+          <span class="diet-badge spicy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Spicy
+          </span>
+          <span class="diet-badge signature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Chef's Signature
+          </span>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="menu-categories reveal" role="tablist" aria-label="Menu sections">
+          <button class="cat-btn active" role="tab" aria-selected="true" data-tab="cat-starters" id="ctab-starters">Starters</button>
+          <button class="cat-btn" role="tab" aria-selected="false" data-tab="cat-mains" id="ctab-mains">Main Courses</button>
+          <button class="cat-btn" role="tab" aria-selected="false" data-tab="cat-desserts" id="ctab-desserts">Desserts</button>
+          <button class="cat-btn" role="tab" aria-selected="false" data-tab="cat-drinks" id="ctab-drinks">Drinks</button>
+        </div>
+
+        <!-- Starters -->
+        <div id="cat-starters" class="menu-panel active" role="tabpanel" aria-labelledby="ctab-starters">
+          <div class="menu-items-grid">
+
+            <article class="menu-item-card reveal">
+              <div class="menu-item-img">
+                <div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div>
+              </div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">Saffron-Scented Hummus</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p class="menu-item-desc">Silky house-made hummus, saffron-infused olive oil, sumac, warm za'atar flatbread. A house classic since 2012.</p>
+                <div class="menu-item-footer">
+                  <span class="diet-badge vegan">Vegan</span>
+                  <span class="diet-badge gf">GF Option</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-img">
+                <div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div>
+              </div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">Burrata &amp; Heirloom Tomato</h3>
+                  <span class="menu-item-price">$18</span>
+                </div>
+                <p class="menu-item-desc">Fresh burrata, multicolor heirloom tomatoes, aged balsamic reduction, Sicilian basil oil, Maldon sea salt flakes.</p>
+                <div class="menu-item-footer">
+                  <span class="diet-badge vegan" style="color:#6a8a6a;border-color:#6a8a6a;">Vegetarian</span>
+                  <span class="diet-badge signature">Chef's Pick</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-2">
+              <div class="menu-item-img">
+                <div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div>
+              </div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">Octopus à la Plancha</h3>
+                  <span class="menu-item-price">$22</span>
+                </div>
+                <p class="menu-item-desc">Slow-braised Galician octopus, crispy confit potato, chimichurri verde, smoked paprika aioli, micro herbs.</p>
+                <div class="menu-item-footer">
+                  <span class="diet-badge gf">GF</span>
+                  <span class="diet-badge signature">Signature</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal">
+              <div class="menu-item-img">
+                <div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div>
+              </div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">Mezze Plate</h3>
+                  <span class="menu-item-price">$26</span>
+                </div>
+                <p class="menu-item-desc">A sharing selection: baba ganoush, muhammara, labneh, olives, pickled turnip, warm pita, falafel.</p>
+                <div class="menu-item-footer">
+                  <span class="diet-badge vegan">Vegan</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-img">
+                <div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div>
+              </div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">Harissa Prawns</h3>
+                  <span class="menu-item-price">$24</span>
+                </div>
+                <p class="menu-item-desc">Tiger prawns, house harissa butter, preserved lemon, fresh coriander, grilled sourdough.</p>
+                <div class="menu-item-footer">
+                  <span class="diet-badge spicy">Spicy</span>
+                  <span class="diet-badge gf">GF</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div id="cat-mains" class="menu-panel" role="tabpanel" aria-labelledby="ctab-mains">
+          <div class="menu-items-grid">
+
+            <article class="menu-item-card reveal">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Lamb Rack Provençal</h3><span class="menu-item-price">$48</span></div>
+                <p class="menu-item-desc">Herb-crusted Australian lamb rack, Provençal ratatouille, Dijon jus, rosemary-roasted fingerling potatoes.</p>
+                <div class="menu-item-footer"><span class="diet-badge signature">Signature</span><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Sea Bass en Papillote</h3><span class="menu-item-price">$42</span></div>
+                <p class="menu-item-desc">Mediterranean sea bass steamed in parchment with fennel, cherry tomato, olives, capers, and lemon butter.</p>
+                <div class="menu-item-footer"><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-2">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Truffle Risotto</h3><span class="menu-item-price">$36</span></div>
+                <p class="menu-item-desc">Arborio rice, black truffle shavings, Parmigiano-Reggiano, chive oil, crispy shallots.</p>
+                <div class="menu-item-footer"><span class="diet-badge vegan" style="color:#6a8a6a;border-color:#6a8a6a;">Vegetarian</span><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Chicken Chermoula</h3><span class="menu-item-price">$34</span></div>
+                <p class="menu-item-desc">Chermoula-marinated half chicken, preserved lemon couscous, harissa yogurt, pomegranate, fresh herbs.</p>
+                <div class="menu-item-footer"><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Wagyu Kofta</h3><span class="menu-item-price">$52</span></div>
+                <p class="menu-item-desc">A5 Wagyu beef kofta, toasted pine nuts, currant pilaf, tahini sauce, pomegranate molasses drizzle.</p>
+                <div class="menu-item-footer"><span class="diet-badge signature">Signature</span><span class="diet-badge spicy">Mild Heat</span></div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div id="cat-desserts" class="menu-panel" role="tabpanel" aria-labelledby="ctab-desserts">
+          <div class="menu-items-grid">
+            <article class="menu-item-card reveal">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Crème Brûlée Tahini</h3><span class="menu-item-price">$14</span></div>
+                <p class="menu-item-desc">Silky tahini custard, orange blossom water, candied sesame brittle, crackling caramelized crust.</p>
+                <div class="menu-item-footer"><span class="diet-badge vegan" style="color:#6a8a6a;border-color:#6a8a6a;">Vegetarian</span><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Baklava Sundae</h3><span class="menu-item-price">$16</span></div>
+                <p class="menu-item-desc">Walnut-pistachio baklava, rose water ice cream, honey drizzle, crushed pistachios, edible gold leaf.</p>
+                <div class="menu-item-footer"><span class="diet-badge signature">Signature</span><span class="diet-badge vegan" style="color:#6a8a6a;border-color:#6a8a6a;">Vegetarian</span></div>
+              </div>
+            </article>
+            <article class="menu-item-card reveal reveal-delay-2">
+              <div class="menu-item-img"><div class="img-placeholder"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Food Image</span></div></div>
+              <div class="menu-item-body">
+                <div class="menu-item-header"><h3 class="menu-item-name">Dark Chocolate Fondant</h3><span class="menu-item-price">$15</span></div>
+                <p class="menu-item-desc">72% Valrhona fondant, espresso ganache center, cardamom crème anglaise, vanilla tuile.</p>
+                <div class="menu-item-footer"><span class="diet-badge vegan" style="color:#6a8a6a;border-color:#6a8a6a;">Vegetarian</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div id="cat-drinks" class="menu-panel" role="tabpanel" aria-labelledby="ctab-drinks">
+          <div class="menu-items-grid">
+            <article class="menu-item-card reveal">
+              <div class="menu-item-body" style="padding-top:28px;">
+                <div class="menu-item-header"><h3 class="menu-item-name">Saffron Spritz</h3><span class="menu-item-price">$16</span></div>
+                <p class="menu-item-desc">Aperol, saffron syrup, prosecco, sparkling water, orange slice. The signature cocktail of Saffron Table.</p>
+                <div class="menu-item-footer"><span class="diet-badge signature">Signature</span></div>
+              </div>
+            </article>
+            <article class="menu-item-card reveal reveal-delay-1">
+              <div class="menu-item-body" style="padding-top:28px;">
+                <div class="menu-item-header"><h3 class="menu-item-name">Rose Water Lemonade</h3><span class="menu-item-price">$8</span></div>
+                <p class="menu-item-desc">Fresh-squeezed lemonade, rose water, mint, pomegranate seeds. Non-alcoholic and refreshing.</p>
+                <div class="menu-item-footer"><span class="diet-badge vegan">Vegan</span></div>
+              </div>
+            </article>
+            <article class="menu-item-card reveal reveal-delay-2">
+              <div class="menu-item-body" style="padding-top:28px;">
+                <div class="menu-item-header"><h3 class="menu-item-name">Lebanese Cedar Wine</h3><span class="menu-item-price">$18/glass</span></div>
+                <p class="menu-item-desc">Curated selection of Levant and Mediterranean wines, sommelier-paired to your meal.</p>
+                <div class="menu-item-footer"><span class="diet-badge gf">GF</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to Experience the <em>Menu</em>?</h2>
+        <p>Reserve your table and let the kitchen do the talking.</p>
+        <div class="btn-group">
+          <a href="reservations.html" class="btn btn--primary">Reserve a Table</a>
+          <a href="contact.html" class="btn btn--outline">Enquire About Events</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="nav-logo-name">Saffron Table</span><span class="nav-logo-sub">Mediterranean &amp; Fusion</span></div>
+          <p>Modern Mediterranean dining rooted in tradition, crafted for the curious palate.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Navigate</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul role="list"><li><a href="tel:+15550192000">+1 (555) 019-2000</a></li><li><a href="mailto:hello@saffrontable.com">hello@saffrontable.com</a></li><li><a href="#">42 Aegean Boulevard, NY 10001</a></li></ul></div>
+        <div class="footer-col"><h4>Hours</h4><div class="hours-row"><span class="day">Mon</span><span class="time">Closed</span></div><div class="hours-row"><span class="day">Tue–Thu</span><span class="time">12pm – 10pm</span></div><div class="hours-row"><span class="day">Fri–Sat</span><span class="time">12pm – 11pm</span></div><div class="hours-row"><span class="day">Sun</span><span class="time">11am – 9pm</span></div></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 Saffron Table. All rights reserved.</p><nav class="footer-legal" aria-label="Legal links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>
